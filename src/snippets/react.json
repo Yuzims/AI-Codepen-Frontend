@@ -1,0 +1,61 @@
+{
+  "useState": {
+    "prefix": "useState",
+    "body": "useState(${1})",
+    "description": "useState"
+  },
+  "useEffect": {
+    "prefix": "useEffect",
+    "body": "useEffect",
+    "description": "useEffect"
+  },
+  "useEffect": {
+    "prefix": "useEffect",
+    "body": "useEffect(() => {\n\t${1}\n\treturn () => {\n\t\t${2}\n\t};\n}, [${3}])",
+    "description": "React useEffect hook"
+  },
+   "useRef": {
+    "prefix": "useRef",
+    "body": "useRef",
+    "description": "useRef"
+  },
+  "useRef": {
+    "prefix": "useRef",
+    "body": "const ${1} = useRef(${2})",
+    "description": "React useRef hook"
+  },
+    "useCallback": {
+    "prefix": "useCallback",
+    "body": "const ${1} = useCallback((${2}) => {\n\t${3}\n}, [${4}])",
+    "description": "useCallback"
+  },
+  "useCallback": {
+    "prefix": "useCallback",
+    "body": "const ${1} = useCallback((${2}) => {\n\t${3}\n}, [${4}])",
+    "description": "React useCallback hook"
+  },
+    "useMemo": {
+    "prefix": "useMemo",
+    "body": "const ${1} = useMemo(() => {\n\t${2}\n}, [${3}])",
+    "description": "useMemo"
+  },
+  "useMemo": {
+    "prefix": "useMemo",
+    "body": "const ${1} = useMemo(() => {\n\t${2}\n}, [${3}])",
+    "description": "React useMemo hook"
+  },
+    "useContext": {
+    "prefix": "useCont} = useContext(${2})",
+    "description": "useContext"
+  },
+  "useContext": {
+    "prefix": "useContext",
+    "body": "const ${1} = useContext(${2})",
+    "description": "React useContext hook"
+  },
+  "useReducer": {
+    "prefix": "useReducer",
+    "body": "useReducer(${3}, ${4})",
+    "description": "useReducer"
+  }
+}

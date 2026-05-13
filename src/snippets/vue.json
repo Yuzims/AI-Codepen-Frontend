@@ -1,0 +1,42 @@
+{
+  "ref": {
+    "prefix": "ref",
+    "body": "ref(${1})",
+    "description": "Vue ref"
+  },
+  "reactive": {
+    "prefix": "reactive",
+    "body": "reactive({\n\t${1}\n})",
+    "description": "Vue reactive"
+  },
+  "computed": {
+    "prefix": "computed",
+    "body": "computed(() => ${1})",
+    "description": "Vue computed"
+  },
+  "watch": {
+    "prefix": "watch",
+    "body": "watch(${1}, (newVal, oldVal) => {\n\t${2}\n})",
+    "description": "Vue watch"
+  },
+  "watchEffect": {
+    "prefix": "watchEffect",
+    "body": "watchEffect(() => {\n\t${1}\n})",
+    "description": "Vue watchEffect"
+  },
+  "onMounted": {
+    "prefix": "onMounted",
+    "body": "onMounted(() => {\n\t${1}\n})",
+    "description": "Vue onMounted"
+  },
+  "onUnmounted": {
+    "prefix": "onUnmounted",
+    "body": "onUnmounted(() => {\n\t${1}\n})",
+    "description": "Vue onUnmounted"
+  },
+  "createApp": {
+    "prefix": "createApp",
+    "body": "const app = createApp({\n\tsetup() {\n\t\t${1}\n\t\treturn { ${2} }\n\t},\n\ttemplate: `${3}`\n})\napp.mount('#app')",
+    "description": "Create and mount Vue app"
+  }
+}

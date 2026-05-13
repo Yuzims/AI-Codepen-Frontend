@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 错误/警告波浪线下划线 */
+.cm-error-underline {
+  text-decoration: underline wavy red;
+  text-underline-offset: 2px;
+}
+.cm-warning-underline {
+  text-decoration: underline wavy #f0a500;
+  text-underline-offset: 2px;
+}
+
+/* CodeMirror tooltip 基础样式 */
+.cm-tooltip {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 200;
+}

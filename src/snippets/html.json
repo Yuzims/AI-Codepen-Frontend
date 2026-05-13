@@ -1,0 +1,72 @@
+{
+  "html5": {
+    "prefix": "html5",
+    "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<title>${1:Document}</title>\n</head>\n<body>\n\t${2}\n</body>\n</html>",
+    "description": "HTML5 boilerplate"
+  },
+  "metaCharset": {
+    "prefix": "meta charset",
+    "body": "<meta charset=\"UTF-8\">",
+    "description": "Meta charset tag"
+  },
+  "metaViewport": {
+    "prefix": "meta viewport",
+    "body": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+    "description": "Meta viewport tag"
+  },
+  "linkCss": {
+    "prefix": "link css",
+    "body": "<link rel=\"stylesheet\" href=\"${1:style.css}\">",
+    "description": "Link stylesheet"
+  },
+  "scriptSrc": {
+    "prefix": "script src",
+    "body": "<script src=\"${1:script.js}\"></script>",
+    "description": "Script tag with src"
+  },
+  "form": {
+    "prefix": "form",
+    "body": "<form action=\"${1}\" method=\"${2:post}\">\n\t${3}\n</form>",
+    "description": "Form element"
+  },
+  "fieldset": {
+    "prefix": "fieldset",
+    "body": "<fieldset>\n\t<legend>${1:Legend}</legend>\n\t${2}\n</fieldset>",
+    "description": "Fieldset with legend"
+  },
+  "ulList": {
+    "prefix": "ul list",
+    "body": "<ul>\n\t<li>${1}</li>\n\t<li>${2}</li>\n</ul>",
+    "description": "Unordered list"
+  },
+  "olList": {
+    "prefix": "ol list",
+    "body": "<ol>\n\t<li>${1}</li>\n\t<li>${2}</li>\n</ol>",
+    "description": "Ordered list"
+  },
+  "table": {
+    "prefix": "table",
+    "body": "<table>\n\t<thead>\n\t\t<tr>\n\t\t\t<th>${1}</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>${2}</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+    "description": "Table structure"
+  },
+  "semanticLayout": {
+    "prefix": "semantic layout",
+    "body": "<header>\n\t${1}\n</header>\n<main>\n\t${2}\n</main>\n<footer>\n\t${3}\n</footer>",
+    "description": "Semantic HTML layout"
+  },
+  "figure": {
+    "prefix": "figure",
+    "body": "<figure>\n\t<img src=\"${1}\" alt=\"${2}\">\n\t<figcaption>${3}</figcaption>\n</figure>",
+    "description": "Figure with image and caption"
+  },
+  "dataAttribute": {
+    "prefix": "data attribute",
+    "body": "data-${1:attribute}=\"${2:value}\"",
+    "description": "Data attribute"
+  },
+  "ariaAttribute": {
+    "prefix": "aria attribute",
+    "body": "aria-${1:label}=\"${2:value}\"",
+    "description": "ARIA attribute"
+  }
+}

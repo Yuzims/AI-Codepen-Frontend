@@ -1,0 +1,57 @@
+{
+  "const": {
+    "prefix": "const",
+    "body": "const ${1}",
+    "description": "const"
+  },
+  "let": {
+    "prefix": "let",
+    "body": "let ${1}",
+    "description": "let"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": "switch () {\n\tcase :\n\t\t${1}\n\t\tbreak;\n\tdefault:\n\t\t${4}\n}",
+    "description": "Switch statement"
+  },
+  "forIn": {
+    "prefix": "forin",
+    "body": "for (const ${1} in ${2}) {\n\t${3}\n}",
+    "description": "For...in loop"
+  },
+  "asyncFunction": {
+    "prefix": "async",
+    "body": "async function ${1}(${2}) {\n\t${3}\n}",
+    "description": "Async function"
+  },
+  "exportDefault": {
+    "prefix": "export",
+    "body": "export default ${1}",
+    "description": "Export default"
+  },
+  "importFrom": {
+    "prefix": "import",
+    "body": "import ${1} from '${2}'",
+    "description": "Import module"
+  },
+  "await": {
+    "prefix": "await",
+    "body": "await ${1}",
+    "description": "Await expression"
+  },
+  "return": {
+    "prefix": "return",
+    "body": "return ${1}",
+    "description": "Return statement"
+  },
+  "throw": {
+    "prefix": "throw",
+    "body": "throw new Error('${1}')",
+    "description": "Throw error"
+  },
+  "promise": {
+    "prefix": "new Promise",
+    "body": "new Promise((resolve, reject) => {\n\t${1}\n})",
+    "description": "New Promise"
+  }
+}

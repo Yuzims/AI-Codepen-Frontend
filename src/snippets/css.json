@@ -1,0 +1,72 @@
+{
+  "mediaQuery": {
+    "prefix": "@media",
+    "body": "@media (${1:max-width: 768px}) {\n\t${2}\n}",
+    "description": "Media query"
+  },
+  "keyframes": {
+    "prefix": "@keyframes",
+    "body": "@keyframes ${1:animationName} {\n\t0% { ${2} }\n\t100% { ${3} }\n}",
+    "description": "CSS keyframes"
+  },
+  "importUrl": {
+    "prefix": "@import",
+    "body": "@import url('${1:path}');",
+    "description": "Import CSS file"
+  },
+  "fontFace": {
+    "prefix": "@font-face",
+    "body": "@font-face {\n\tfont-family: '${1:FontName}';\n\tsrc: url('${2:path}');\n}",
+    "description": "Font face declaration"
+  },
+  "flexCenter": {
+    "prefix": "flex-center",
+    "body": "display: flex;\njustify-content: center;\nalign-items: center;",
+    "description": "Flexbox centering"
+  },
+  "absoluteCenter": {
+    "prefix": "absolute-center",
+    "body": "position: absolute;\ntop: 50%;\nleft: 50%;\ntransform: translate(-50%, -50%);",
+    "description": "Absolute centering"
+  },
+  "truncateText": {
+    "prefix": "truncate",
+    "body": "white-space: nowrap;\noverflow: hidden;\ntext-overflow: ellipsis;",
+    "description": "Text truncation"
+  },
+  "clearfix": {
+    "prefix": "clearfix",
+    "body": "&::after {\n\tcontent: '';\n\tdisplay: table;\n\tclear: both;\n}",
+    "description": "Clearfix hack"
+  },
+  "boxShadow": {
+    "prefix": "box-shadow",
+    "body": "box-shadow: ${1:0} ${2:4px} ${3:8px} ${4:rgba(0,0,0,0.1)};",
+    "description": "Box shadow"
+  },
+  "transition": {
+    "prefix": "transition",
+    "body": "transition: ${1:all} ${2:0.3s} ${3:ease};",
+    "description": "CSS transition"
+  },
+  "transform": {
+    "prefix": "transform",
+    "body": "transform: ${1:translate(-50%, -50%)};",
+    "description": "CSS transform"
+  },
+  "gradient": {
+    "prefix": "gradient",
+    "body": "background: linear-gradient(${1:to right}, ${2:#ff9a9e}, ${3:#fecfef});",
+    "description": "Linear gradient"
+  },
+  "gridLayout": {
+    "prefix": "grid-layout",
+    "body": "display: grid;\ngrid-template-columns: repeat(${1:3}, 1fr);\ngap: ${2:16px};",
+    "description": "Basic grid layout"
+  },
+  "resetMargin": {
+    "prefix": "reset",
+    "body": "* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n}",
+    "description": "CSS reset"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "interface": {
+    "prefix": "interface",
+    "body": "interface ${1} {\n\t${2}\n}",
+    "description": "TypeScript interface"
+  },
+  "type": {
+    "prefix": "type",
+    "body": "type ${1} = ${2}",
+    "description": "Type alias"
+  },
+  "enum": {
+    "prefix": "enum",
+    "body": "enum ${1} {\n\t${2} = '${3}'\n}",
+    "description": "TypeScript enum"
+  },
+  "declare": {
+    "prefix": "declare",
+    "body": "declare module '${1}' {\n\t${2}\n}",
+    "description": "Module declaration"
+  }
+}
