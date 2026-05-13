@@ -110,7 +110,7 @@
 
       <section class="panel">
         <h1>实时预览</h1>
-        <iframe id="previewFrame" title="preview"></iframe>
+        <iframe id="previewFrame" title="preview" sandbox="allow-scripts"></iframe>
       </section>
     </div>
 
@@ -141,8 +141,17 @@
   </body>
 </html>`;
 
+      function escapeHtml(value) {
+        return value
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
       function generateCode(prompt) {
-        const escapedPrompt = (prompt || "创建一个欢迎卡片").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        const escapedPrompt = escapeHtml(prompt || "创建一个欢迎卡片");
         return `<!doctype html>
 <html lang="zh-CN">
   <head>
@@ -166,10 +175,7 @@
       }
 
       function runPreview() {
-        const doc = previewFrame.contentDocument || previewFrame.contentWindow.document;
-        doc.open();
-        doc.write(codeEditor.value);
-        doc.close();
+        previewFrame.srcdoc = codeEditor.value;
       }
 
       generateButton.addEventListener("click", () => {
